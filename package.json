@@ -1,0 +1,22 @@
+{
+  "name": "weather-cli",
+  "version": "1.0.0",
+  "description": "A CLI that tells you the weather at a certain location",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "weather",
+    "cli"
+  ],
+  "author": "Paul Bennett",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "chalk": "^4.1.0",
+    "dotenv": "^8.2.0",
+    "inquirer": "^7.2.0",
+    "node-emoji": "^1.10.0"
+  }
+}
