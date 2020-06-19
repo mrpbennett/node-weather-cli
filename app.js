@@ -9,13 +9,11 @@ const auth = {
     WEATHER_STACK: process.env.WEATHER_STACK,
 };
 
-const usersCity = [
-    {
-        type: 'input',
-        name: 'city',
-        message: 'What city would you like to check the weather in?',
-    },
-];
+const usersCity = [{
+    type: 'input',
+    name: 'city',
+    message: 'What city would you like to check the weather in?',
+}, ];
 
 inquirer
     .prompt(usersCity)
