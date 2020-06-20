@@ -9,11 +9,13 @@ const auth = {
     WEATHER_STACK: process.env.WEATHER_STACK,
 };
 
-const usersCity = [{
-    type: 'input',
-    name: 'city',
-    message: 'What city would you like to check the weather in?',
-}, ];
+const usersCity = [
+    {
+        type: 'input',
+        name: 'city',
+        message: 'What city would you like to check the weather in?',
+    },
+];
 
 inquirer
     .prompt(usersCity)
@@ -32,6 +34,8 @@ inquirer
                 description = emoji.emojify(':cloud:');
             } else if (description === 'Sunny') {
                 description = emoji.emojify(':sunny:');
+            } else if (description === 'Clear') {
+                description = emoji.emojify(':mostly_sunny:');
             }
 
             console.log(
